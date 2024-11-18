@@ -1,6 +1,6 @@
 "use client";
 
-
+import FeaturedProd from "@/components/FeaturedProd";
 import { HomeCategories } from "@/components/HomeCategories";
 import LandingPage from "@/components/LandingPage";
 
@@ -13,7 +13,11 @@ export default function Home() {
 
       {/* Categories */}
       <section className="">
-     <HomeCategories />
+        <HomeCategories />
+      </section>
+
+      <section>
+        <FeaturedProd />
       </section>
     </div>
   );
