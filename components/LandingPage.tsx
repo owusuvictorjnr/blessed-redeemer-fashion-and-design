@@ -16,6 +16,7 @@ export default function LandingPage() {
           showStatus={true}
           showArrows={true}
           showIndicators={true}
+          swipeable
         >
           {allData.hero.map((hero) => (
             <div
@@ -29,7 +30,7 @@ export default function LandingPage() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
-                  className="rounded-md"
+                  className="rounded"
                 />
               </div>
             </div>
