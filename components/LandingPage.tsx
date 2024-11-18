@@ -16,7 +16,7 @@ export default function LandingPage() {
           showStatus={true}
           showArrows={true}
           showIndicators={true}
-          swipeable
+          swipeable={true}
         >
           {allData.hero.map((hero) => (
             <div
