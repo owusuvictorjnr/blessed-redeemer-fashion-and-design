@@ -30,22 +30,25 @@ export default function SecondTopbar() {
 
       {/* Navbar */}
       <div className="hidden md:flex justify-center w-full">
-        <ul className="flex space-x-10">
+        <ul className="flex space-x-10 capitalize text-xl font-semibold">
           <li>
             <Link href="/">
               <h1 className="text-gray-700 hover:text-gray-900">home</h1>
             </Link>
           </li>
+
           <li>
             <Link href="/about">
               <h1 className="text-gray-700 hover:text-gray-900">about</h1>
             </Link>
           </li>
+
           <li>
             <Link href="/contact-us">
               <h1 className="text-gray-700 hover:text-gray-900">contact us</h1>
             </Link>
           </li>
+
           <li>
             <Link href="/blog">
               <h1 className="text-gray-700 hover:text-gray-900">blog</h1>
