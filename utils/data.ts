@@ -25,5 +25,43 @@ const allData = {
       img: "/logo/logo1.jpg",
     },
   ],
+
+  hero: [
+    {
+      id: 1,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic2.jpg",
+    },
+
+    {
+      id: 2,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic3.jpg",
+    },
+
+    {
+      id: 3,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic4.jpg",
+    },
+
+    {
+      id: 4,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic5.jpg",
+    },
+
+    {
+      id: 5,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic7.jpg",
+    },
+
+    {
+      id: 6,
+      name: "blessed redeemer fashion and design",
+      img: "/img/pic8.jpg",
+    },
+  ],
 };
 export default allData;
