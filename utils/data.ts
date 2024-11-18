@@ -102,6 +102,138 @@ const allData = {
     ],
   },
 
+  // Banner
+  banner: {
+    womenBanner: [
+      {
+        id: 1,
+        name: "women",
+        slug: "longsleev",
+        img: "/img/pic11.jpg",
+      },
+
+      {
+        id: 1,
+        name: "women",
+        slug: "longsleev",
+        img: "/img/pic12.jpg",
+      },
+
+      {
+        id: 1,
+        name: "women",
+        slug: "longsleev",
+        img: "/img/pic13.jpg",
+      },
+
+      {
+        id: 1,
+        name: "women",
+        slug: "longsleev",
+        img: "/img/pic14.jpg",
+      },
+    ],
+
+    featBanner: [
+      {
+        id: 1,
+        name: "men",
+        slug: "longsleev",
+        img: "/img/pic16.jpg",
+      },
+    ],
+
+    kidsBanner: [
+      {
+        id: 1,
+        name: "kids",
+        slug: "longsleev",
+        img: "/img/pic17.jpg",
+      },
+
+      {
+        id: 1,
+        name: "kids",
+        slug: "longsleev",
+        img: "/img/pic18.jpg",
+      },
+
+      {
+        id: 1,
+        name: "kids",
+        slug: "longsleev",
+        img: "/img/pic19.jpg",
+      },
+
+      {
+        id: 1,
+        name: "kids",
+        slug: "longsleev",
+        img: "/img/pic10.jpg",
+      },
+    ],
+
+    unisex: [
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic21.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic22.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic23.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic5.jpg",
+      },
+    ],
+
+    menBanner: [
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic7.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic9.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic10.jpg",
+      },
+
+      {
+        id: 1,
+        name: "unisex",
+        slug: "longsleev",
+        img: "/img/pic11.jpg",
+      },
+    ],
+  },
+
   category: {
     women: [
       {
@@ -741,6 +873,324 @@ const allData = {
 
   // Featured Products
   featuredProducts: [
+    {
+      name: "Long Sleev",
+      slug: "longsleev",
+      category: "Sleeves",
+      image: "/img/pic2.jpg",
+      price: 50,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 10,
+      isFeatured: true,
+      banner: "/img/pic5.jpg",
+    },
+
+    {
+      name: "short Sleev",
+      slug: "shortsleev",
+      category: "Sleeves",
+      image: "/img/pic3.jpg",
+      price: 25.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 6,
+      isFeatured: true,
+      banner: "/img/pic5.jpg",
+    },
+
+    {
+      name: "long shirt",
+      slug: "longshirt",
+      category: "Sleeves",
+      image: "/img/pic4.jpg",
+      price: 50.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 8,
+      isFeatured: true,
+    },
+
+    {
+      name: "short shirt",
+      slug: "shortshirt",
+      category: "Sleeves",
+      image: "/img/pic5.jpg",
+      price: 10.0,
+      brand: "African Print",
+      countInStock: 3,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 9,
+      isFeatured: true,
+    },
+
+    {
+      name: "nothern fugu",
+      slug: "nothernfugu",
+      category: "Sleeves",
+      image: "/img/pic7.jpg",
+      price: 15.0,
+      brand: "African Print",
+      countInStock: 5,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 7,
+      isFeatured: true,
+    },
+
+    {
+      name: "southern fugu",
+      slug: "southernfugu",
+      category: "Sleeves",
+      image: "/img/pic8.jpg",
+      price: 44.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 5,
+      isFeatured: true,
+    },
+
+    {
+      name: "afican kente",
+      slug: "africankente",
+      category: "Sleeves",
+      image: "/img/pic9.jpg",
+      price: 50.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.4,
+      description: "high quality African ware",
+      numReviews: 7,
+      isFeatured: true,
+    },
+
+    {
+      name: "chiffon",
+      slug: "chiffon",
+      category: "Sleeves",
+      image: "/img/pic10.jpg",
+      price: 150.0,
+      brand: "African Print",
+      countInStock: 4,
+      rating: 4.6,
+      description: "high quality African ware",
+      numReviews: 9,
+      isFeatured: true,
+    },
+
+    {
+      name: "Long Sleev",
+      slug: "longsleev",
+      category: "Sleeves",
+      image: "/img/pic11.jpg",
+      price: 10.0,
+      brand: "African Print",
+      countInStock: 6,
+      rating: 3.9,
+      description: "high quality African ware",
+      numReviews: 8,
+      isFeatured: true,
+    },
+
+    {
+      name: "maxi dress",
+      slug: "maxidress",
+      category: "Sleeves",
+      image: "/img/pic12.jpg",
+      price: 13.0,
+      brand: "African Print",
+      countInStock: 5,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 5,
+      isFeatured: true,
+    },
+
+    {
+      name: "off shoulder",
+      slug: "offshoulder",
+      category: "Sleeves",
+      image: "/img/pic13.jpg",
+      price: 100.0,
+      brand: "African Print",
+      countInStock: 20,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 10,
+      isFeatured: true,
+    },
+  ],
+
+  // New Products
+  NewProducts: [
+    {
+      name: "Long Sleev",
+      slug: "longsleev",
+      category: "Sleeves",
+      image: "/img/pic2.jpg",
+      price: 50,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 10,
+      isFeatured: true,
+      banner: "/img/pic5.jpg",
+    },
+
+    {
+      name: "short Sleev",
+      slug: "shortsleev",
+      category: "Sleeves",
+      image: "/img/pic3.jpg",
+      price: 25.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 6,
+      isFeatured: true,
+      banner: "/img/pic5.jpg",
+    },
+
+    {
+      name: "long shirt",
+      slug: "longshirt",
+      category: "Sleeves",
+      image: "/img/pic4.jpg",
+      price: 50.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 8,
+      isFeatured: true,
+    },
+
+    {
+      name: "short shirt",
+      slug: "shortshirt",
+      category: "Sleeves",
+      image: "/img/pic5.jpg",
+      price: 10.0,
+      brand: "African Print",
+      countInStock: 3,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 9,
+      isFeatured: true,
+    },
+
+    {
+      name: "nothern fugu",
+      slug: "nothernfugu",
+      category: "Sleeves",
+      image: "/img/pic7.jpg",
+      price: 15.0,
+      brand: "African Print",
+      countInStock: 5,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 7,
+      isFeatured: true,
+    },
+
+    {
+      name: "southern fugu",
+      slug: "southernfugu",
+      category: "Sleeves",
+      image: "/img/pic8.jpg",
+      price: 44.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 5,
+      isFeatured: true,
+    },
+
+    {
+      name: "afican kente",
+      slug: "africankente",
+      category: "Sleeves",
+      image: "/img/pic9.jpg",
+      price: 50.0,
+      brand: "African Print",
+      countInStock: 0,
+      rating: 4.4,
+      description: "high quality African ware",
+      numReviews: 7,
+      isFeatured: true,
+    },
+
+    {
+      name: "chiffon",
+      slug: "chiffon",
+      category: "Sleeves",
+      image: "/img/pic10.jpg",
+      price: 150.0,
+      brand: "African Print",
+      countInStock: 4,
+      rating: 4.6,
+      description: "high quality African ware",
+      numReviews: 9,
+      isFeatured: true,
+    },
+
+    {
+      name: "Long Sleev",
+      slug: "longsleev",
+      category: "Sleeves",
+      image: "/img/pic11.jpg",
+      price: 10.0,
+      brand: "African Print",
+      countInStock: 6,
+      rating: 3.9,
+      description: "high quality African ware",
+      numReviews: 8,
+      isFeatured: true,
+    },
+
+    {
+      name: "maxi dress",
+      slug: "maxidress",
+      category: "Sleeves",
+      image: "/img/pic12.jpg",
+      price: 13.0,
+      brand: "African Print",
+      countInStock: 5,
+      rating: 3.5,
+      description: "high quality African ware",
+      numReviews: 5,
+      isFeatured: true,
+    },
+
+    {
+      name: "off shoulder",
+      slug: "offshoulder",
+      category: "Sleeves",
+      image: "/img/pic13.jpg",
+      price: 100.0,
+      brand: "African Print",
+      countInStock: 20,
+      rating: 4.5,
+      description: "high quality African ware",
+      numReviews: 10,
+      isFeatured: true,
+    },
+  ],
+
+  // New Products
+  shirts: [
     {
       name: "Long Sleev",
       slug: "longsleev",
