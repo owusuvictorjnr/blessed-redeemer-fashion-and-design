@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const HomeCategories = () => {
   return (
-    <div className="px-4 py-6">
+    <div className="px-4 py-6 mt-10 md:mt-20">
       <div className="flex justify-between">
         <h2 className="text-sm font-semibold mb-4">Shop By Category</h2>
         <h4 className="text-sm text-gray-400 capitalize font-semibold mb-4 hover:text-blue-400">
@@ -42,3 +42,10 @@ export const HomeCategories = () => {
     </div>
   );
 };
+
+
+// new prod.
+// featured prod.
+// Tops
+// trousers
+// top & down
