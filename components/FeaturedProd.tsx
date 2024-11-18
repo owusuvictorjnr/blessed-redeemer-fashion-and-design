@@ -21,17 +21,19 @@ export default function FeaturedProd() {
         {homeFeatured.map((feat) => (
           <div
             key={feat.name}
-            className="shadow-md bg-gray-300/40 h-[15rem] rounded"
+            className="shadow-md bg-gray-300/40 min-h-[15rem] rounded"
           >
-            <Image
-              src={feat.image}
-              alt={feat.name}
-              width={1000}
-              height={1000}
-              className="h-32 w-full mx-auto rounded hover:scale-105 duration-500"
-            />
+            <Link href={`/detail/${feat.slug}/`}>
+              <Image
+                src={feat.image}
+                alt={feat.name}
+                width={1000}
+                height={1000}
+                className="h-32 w-full mx-auto rounded hover:scale-105 duration-500"
+              />
+            </Link>
 
-            <div className="px-4 py-3 space-y-3">
+            <div className="px-4 py-3">
               <div className="flex justify-between items-center ">
                 <h4 className="text-sm font-semibold capitalize">
                   {feat.name}
@@ -44,9 +46,13 @@ export default function FeaturedProd() {
                   &#x20B5; {feat.price}
                 </p>
               </div>
+
+              <p className="font-semibold text-[#A2B0AF]">
+                {feat.description.split(" ").slice(0, 10).join(" ") + "..."}
+              </p>
             </div>
 
-            <div className="text-center bg-yellow-400 py-2 hover:bg-blue-400 hover:text-white duration-500 shadow px-2 font-semibold text-black/60">
+            <div className="text-center bg-yellow-400 py-2 hover:bg-blue-400 hover:text-white duration-500 shadow px-2 font-semibold text-black/60 hidden md:block">
               <button type="submit" className="">
                 Add to cart
               </button>
