@@ -11,20 +11,35 @@ import Shirts from "@/components/Shirts";
 export default function Home() {
   return (
     <div className="bg-[#F7F7FA]">
-      <section><LandingPage /></section>
+      <section>
+        <LandingPage />
+      </section>
 
       {/* Categories */}
-      <section className=""><HomeCategories /></section>
+      <section className="">
+        <HomeCategories />
+      </section>
 
-      <section>  <FeaturedProd /></section>
+      <section>
+        {" "}
+        <FeaturedProd />
+      </section>
 
-      <section><KidsBanner /></section>
+      <section>
+        <KidsBanner />
+      </section>
 
-      <section><NewProducts /></section>
+      <section>
+        <NewProducts />
+      </section>
 
-      <section><WomenBanner /></section>
+      <section>
+        <WomenBanner />
+      </section>
 
-      <section><Shirts /></section>
+      <section>
+        <Shirts />
+      </section>
     </div>
   );
 }
