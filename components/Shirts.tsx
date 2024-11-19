@@ -6,71 +6,75 @@ import { CiHeart } from "react-icons/ci";
 
 export default function Shirts() {
   const shirts = allData.shirts.slice(0, 6);
+
   return (
     <div className="pb-5 min-h-[20rem]">
+      {/* Header Section */}
       <div className="flex justify-between lg:justify-center px-6 mt-10 md:mt-20">
         <h2 className="text-sm font-semibold mb-4 capitalize lg:text-lg">
           shirts
         </h2>
-        <h4 className="text-sm text-gray-400 capitalize font-semibold mb-4 hover:text-blue-400  md:hidden">
-          <Link href="">see all</Link>
-        </h4>
+        <Link href="/shirts">
+          <h4 className="text-sm text-gray-400 capitalize font-semibold mb-4 hover:text-blue-400 md:hidden">
+            see all
+          </h4>
+        </Link>
       </div>
 
+      {/* Shirts Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 px-5 py-6">
-        {shirts.map((feat) => (
+        {shirts.map(({ name, image, slug, rating, price, description }) => (
           <div
-            key={feat.name}
+            key={name}
             className="shadow-md bg-[#FFFAF0] min-h-[15rem] rounded"
           >
-            <Link href={`/detail/${feat.slug}/`}>
+            <Link href={`/detail/${slug}/`}>
               <Image
-                src={feat.image}
-                alt={feat.name}
+                src={image}
+                alt={name}
                 width={1000}
                 height={1000}
-                className="h-32 w-full mx-auto rounded hover:scale-105 duration-500"
+                className="h-32 w-full mx-auto rounded hover:scale-105 transition-transform duration-500"
               />
             </Link>
 
+            {/* Shirt Info */}
             <div className="px-4 py-3">
-              <div className="flex justify-between items-center ">
+              <div className="flex justify-between items-center">
                 <h4 className="text-sm font-bold capitalize text-[#333333]">
-                  {feat.name}
+                  {name}
                 </h4>
-                <CiHeart className="text-lg text-gray-400 hover:text-red-500 rounded-full" />
+                <CiHeart className="text-lg text-gray-400 hover:text-red-500 rounded-full cursor-pointer" />
               </div>
               <div className="flex justify-center gap-5 items-center">
-                <p className="text-lg text-[#FFA500]">{feat.rating}</p>
-                <p className="text-lg text-[#FF6B6B] font-bold">
-                  &#x20B5; {feat.price}
+                <p className="text-lg text-[#FFA500]">{rating}</p>
+                <p className="text-lg font-bold text-[#FF6B6B]">
+                  &#x20B5; {price}
                 </p>
               </div>
-
               <p className="font-semibold text-[#9E9E9E]">
-                {feat.description.split(" ").slice(0, 10).join(" ") + "..."}
+                {description.split(" ").slice(0, 10).join(" ") + "..."}
               </p>
             </div>
 
-            <div className="text-center bg-yellow-400 py-2 hover:bg-blue-400 hover:text-white duration-500 shadow px-2 font-semibold text-black/60 hidden md:block">
-              <button type="submit" className="">
-                Add to cart
-              </button>
+            {/* Add to Cart Button */}
+            <div className="text-center bg-yellow-400 py-2 hover:bg-blue-400 hover:text-white transition-colors duration-500 shadow px-2 font-semibold text-black/60 hidden md:block">
+              <button type="button">Add to cart</button>
             </div>
           </div>
         ))}
       </div>
-      <div className="hidden md:block">
-        <div className="flex gap-5">
-          <div className="h-0.5 bg-black w-1/2 mt-5" />
-          <Link
-            href="/shirts"
-            className="text-sm font-bold mb-4 capitalize text-center bg-[#11202C] text-white w-36 py-2 "
-          >
-            view all
-          </Link>
-          <div className="h-0.5 bg-black w-1/2 mt-5" />
-        </div>
+
+      {/* View All Section (for larger screens) */}
+      <div className="hidden md:flex items-center gap-5 mt-5">
+        <div className="h-0.5 bg-black flex-1" />
+        <Link
+          href="/shirts"
+          className="text-sm font-bold capitalize text-center bg-[#11202C] text-white py-2 px-4 rounded"
+        >
+          view all
+        </Link>
+        <div className="h-0.5 bg-black flex-1" />
       </div>
     </div>
   );
