@@ -21,7 +21,7 @@ export default function FeaturedProd() {
         {homeFeatured.map((feat) => (
           <div
             key={feat.name}
-            className="shadow-md bg-gray-300/40 min-h-[15rem] rounded"
+            className="shadow-md bg-gray-100 min-h-[15rem] rounded"
           >
             <Link href={`/detail/${feat.slug}/`}>
               <Image

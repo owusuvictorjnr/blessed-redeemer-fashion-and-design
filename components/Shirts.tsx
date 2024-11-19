@@ -21,7 +21,7 @@ export default function Shirts() {
         {shirts.map((feat) => (
           <div
             key={feat.name}
-            className="shadow-md bg-gray-100/40 min-h-[15rem] rounded"
+            className="shadow-md bg-gray-100 min-h-[15rem] rounded"
           >
             <Link href={`/detail/${feat.slug}/`}>
               <Image
@@ -33,7 +33,7 @@ export default function Shirts() {
               />
             </Link>
 
-            <div className="px-4 py-3 space-y-3">
+            <div className="px-4 py-3">
               <div className="flex justify-between items-center ">
                 <h4 className="text-sm font-bold capitalize">{feat.name}</h4>
                 <CiHeart className="text-lg text-gray-400 hover:text-red-500 rounded-full" />
