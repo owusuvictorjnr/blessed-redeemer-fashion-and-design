@@ -21,7 +21,7 @@ export default function NewProducts() {
         {newProducts.map((feat) => (
           <div
             key={feat.name}
-            className="shadow-md bg-gray-100 min-h-[15rem] rounded"
+            className="shadow-md bg-[#FFFAF0] min-h-[15rem] rounded"
           >
             <Link href={`/detail/${feat.slug}/`}>
               <Image
@@ -35,19 +35,19 @@ export default function NewProducts() {
 
             <div className="px-4 py-3">
               <div className="flex justify-between items-center ">
-                <h4 className="text-sm font-semibold capitalize">
+                <h4 className="text-sm font-semibold capitalize text-[#333333]">
                   {feat.name}
                 </h4>
                 <CiHeart className="text-lg text-gray-400 hover:text-red-500 rounded-full" />
               </div>
               <div className="flex justify-between items-center">
-                <p className="text-sm text-gray-400">{feat.rating}</p>
-                <p className="text-sm text-red-400 font-bold">
+                <p className="text-sm text-[#FFA500]">{feat.rating}</p>
+                <p className="text-sm font-bold text-[#FF6B6B]">
                   &#x20B5; {feat.price}
                 </p>
               </div>
 
-              <p className="font-semibold text-[#A2B0AF]">
+              <p className="font-semibold text-[#9E9E9E]">
                 {feat.description.split(" ").slice(0, 10).join(" ") + "..."}
               </p>
             </div>
