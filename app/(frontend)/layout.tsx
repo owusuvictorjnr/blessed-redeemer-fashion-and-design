@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 // import FirstTopbar from "@/components/Navbar/firstTopbar";
 // import SecondTopbar from "@/components/Navbar/secondTopbar";
 
@@ -14,7 +14,7 @@ export default function FrontendLayout({
       {/* <FirstTopbar />
       <SecondTopbar /> */}
       <main className="">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
