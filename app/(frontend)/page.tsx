@@ -10,7 +10,7 @@
 
 export default function Home() {
   return (
-    <div className="min-h">
+    <div className="">
       <section>{/* <LandingPage /> */}</section>
 
       {/* Categories */}
