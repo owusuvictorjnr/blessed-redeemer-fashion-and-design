@@ -10,7 +10,7 @@ export default function FrontendLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="">
+    <div className="w-full">
       {/* <FirstTopbar />
       <SecondTopbar /> */}
       <main className="">{children}</main>
