@@ -6,7 +6,7 @@ import FeaturedProd from "@/components/FeaturedProd";
 import { HomeCategories } from "@/components/HomeCategories";
 import LandingPage from "@/components/LandingPage";
 import NewProducts from "@/components/NewProducts";
-import Shirts from "@/components/Shirts";
+// import Shirts from "@/components/Shirts";
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Shirts />
+        {/* <Shirts /> */}
       </section>
     </div>
   );
