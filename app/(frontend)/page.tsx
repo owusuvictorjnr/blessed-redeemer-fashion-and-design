@@ -1,6 +1,6 @@
 "use client";
 
-import KidsBanner from "@/components/Banners/kidsBanner";
+// import KidsBanner from "@/components/Banners/kidsBanner";
 import WomenBanner from "@/components/Banners/womenBanner";
 import FeaturedProd from "@/components/FeaturedProd";
 import { HomeCategories } from "@/components/HomeCategories";
