@@ -2,8 +2,8 @@
 
 import KidsBanner from "@/components/Banners/kidsBanner";
 import WomenBanner from "@/components/Banners/womenBanner";
-import FeaturedProd from "@/components/FeaturedProd";
-// import { HomeCategories } from "@/components/HomeCategories";
+// import FeaturedProd from "@/components/FeaturedProd";
+import { HomeCategories } from "@/components/HomeCategories";
 import LandingPage from "@/components/LandingPage";
 import NewProducts from "@/components/NewProducts";
 import Shirts from "@/components/Shirts";
@@ -17,11 +17,11 @@ export default function Home() {
 
       {/* Categories */}
       <section className="">
-        {/* <HomeCategories /> */}
+        <HomeCategories />
       </section>
 
       <section>
-        <FeaturedProd />
+        {/* <FeaturedProd /> */}
       </section>
 
       <section>
