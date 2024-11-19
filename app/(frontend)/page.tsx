@@ -1,7 +1,7 @@
 "use client";
 
 // import KidsBanner from "@/components/Banners/kidsBanner";
-import WomenBanner from "@/components/Banners/womenBanner";
+// import WomenBanner from "@/components/Banners/womenBanner";
 import FeaturedProd from "@/components/FeaturedProd";
 import { HomeCategories } from "@/components/HomeCategories";
 import LandingPage from "@/components/LandingPage";
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       <section>
-        <WomenBanner />
+        {/* <WomenBanner /> */}
       </section>
 
       <section>
