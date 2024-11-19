@@ -10,7 +10,7 @@ import Shirts from "@/components/Shirts";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-[#F7F7FA]">
       <section><LandingPage /></section>
 
       {/* Categories */}
