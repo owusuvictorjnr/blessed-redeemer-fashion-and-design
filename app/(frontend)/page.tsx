@@ -10,35 +10,21 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-200">
-      <section>
-        {/* <LandingPage /> */}
-      </section>
+    <div className="min-h-screen w-full">
+      <section>{/* <LandingPage /> */}</section>
 
       {/* Categories */}
-      <section className="">
-        {/* <HomeCategories /> */}
-      </section>
+      <section className="">{/* <HomeCategories /> */}</section>
 
-      <section>
-      {/* /  <FeaturedProd /> */}
-      </section>
+      <section>{/* /  <FeaturedProd /> */}</section>
 
-      <section>
-        {/* <KidsBanner /> */}
-      </section>
+      <section>{/* <KidsBanner /> */}</section>
 
-      <section>
-        {/* <NewProducts /> */}
-      </section>
+      <section>{/* <NewProducts /> */}</section>
 
-      <section>
-        {/* <WomenBanner /> */}
-      </section>
+      <section>{/* <WomenBanner /> */}</section>
 
-      <section>
-        {/* <Shirts /> */}
-      </section>
+      <section>{/* <Shirts /> */}</section>
     </div>
   );
 }
