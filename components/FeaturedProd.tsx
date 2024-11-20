@@ -1,11 +1,26 @@
+// FeaturedProd Component
+"use client";
+
 import allData from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CiHeart } from "react-icons/ci";
+import { useCurrency } from "@/utils/CurrencyContext"; // Import useCurrency
+
+// Define types for the product data
+interface Product {
+  name: string;
+  image: string;
+  slug: string;
+  rating: number | string;
+  price: number | string;
+  description: string;
+}
 
 export default function FeaturedProd() {
-  const homeFeatured = allData.featuredProducts.slice(0, 6);
+  const { rate, currencySymbol } = useCurrency(); // Access currency rate and symbol from context
+  const homeFeatured: Product[] = allData.featuredProducts.slice(0, 6);
 
   return (
     <div className="pb-5 min-h-[20rem]">
@@ -50,7 +65,7 @@ export default function FeaturedProd() {
                 <div className="flex justify-between items-center">
                   <p className="text-sm text-[#FFA500]">{rating}</p>
                   <p className="text-sm text-[#FF6B6B] font-bold">
-                    &#x20B5; {price}
+                    {currencySymbol} {((price as number) * rate).toFixed(2)}
                   </p>
                 </div>
                 <p className="font-semibold text-[#9E9E9E]">
