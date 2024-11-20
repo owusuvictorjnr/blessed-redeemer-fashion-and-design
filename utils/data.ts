@@ -100,6 +100,15 @@ const allData = {
         img: "/img/pic7.jpg",
       },
     ],
+
+    shirts: [
+      {
+        id: 1,
+        name: "shirts",
+        slug: "longsleev",
+        img: "/img/pic7.jpg",
+      },
+    ],
   },
 
   // Banner
@@ -1196,7 +1205,7 @@ const allData = {
       slug: "longsleev",
       category: "Sleeves",
       image: "/img/pic2.jpg",
-      price: 50,
+      price: 50.0,
       brand: "African Print",
       countInStock: 0,
       rating: 4.5,
