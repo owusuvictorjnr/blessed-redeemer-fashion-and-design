@@ -18,23 +18,22 @@ export const HomeCategories = () => {
 
       {/* Flex layout for small screens, grid layout for medium and larger screens */}
       <div className="flex md:grid md:grid-cols-5 md:gap-6 gap-4 overflow-x-auto md:overflow-hidden">
-        <Link href="/category/women" className="flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <WomenCategory />
-        </Link>
-        <Link href="/category/men" className="flex flex-col items-center">
+        </div>
+        <div className="flex flex-col items-center">
           <MenCategory />
-        </Link>
-        <Link href="/category/kids" className="flex flex-col items-center">
+        </div>
+        <div className="flex flex-col items-center">
           <KidsCategory />
-        </Link>
-        <Link href="/category/unisex" className="flex flex-col items-center">
+        </div>
+        <div className="flex flex-col items-center">
           <UnisexCategory />
-        </Link>
+        </div>
 
-        <Link href="/category/unisex" className="flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <ShirtsCategory />
-        </Link>
-
+        </div>
       </div>
     </div>
   );
@@ -42,6 +41,4 @@ export const HomeCategories = () => {
 
 // TODO: on large screen, the categories should be displayed in a grid of 4 columns
 
-// Tops
-// trousers
 // top & down
