@@ -1,4 +1,3 @@
-// Shirts Component
 "use client";
 
 import allData from "@/utils/data";
@@ -14,13 +13,19 @@ interface Product {
   image: string;
   slug: string;
   rating: number | string;
-  price: number | string;
+  price: number; // Ensure price is strictly a number
   description: string;
 }
 
 export default function Shirts() {
   const { rate, currencySymbol } = useCurrency(); // Get rate and symbol from context
   const shirts: Product[] = allData.shirts.slice(0, 6);
+
+  // Utility function for price conversion
+  const convertPrice = (price: number) => {
+    if (!rate) return price.toFixed(2); // Fallback if rate isn't available yet
+    return (price * rate).toFixed(2);
+  };
 
   return (
     <div className="pb-5 min-h-[20rem]">
@@ -64,7 +69,7 @@ export default function Shirts() {
               <div className="flex justify-center gap-5 items-center">
                 <p className="text-lg text-[#FFA500]">{rating}</p>
                 <p className="text-lg font-bold text-[#FF6B6B]">
-                  {currencySymbol} {((price as number) * rate).toFixed(2)}
+                  {currencySymbol} {convertPrice(price)}
                 </p>
               </div>
               <p className="font-semibold text-[#9E9E9E]">
