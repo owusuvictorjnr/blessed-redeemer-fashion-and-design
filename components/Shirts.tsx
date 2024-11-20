@@ -17,7 +17,7 @@ interface Product {
   description: string;
 }
 
-export default function Shirts() {
+export default function ShirtsComponent() {
   const { rate, currencySymbol } = useCurrency(); // Get rate and symbol from context
   const shirts: Product[] = allData.shirts.slice(0, 6);
 
