@@ -3,7 +3,7 @@ import ipinfo from "node-ipinfo";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getCurrencyProps(req: any) {
-  const token = process.env.NEXT_PUBLIC_IPINFO_TOKEN ?? "";
+  const token = process.env.IPINFO_TOKEN || "";
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
 
   let country = "Ghana"; // default country

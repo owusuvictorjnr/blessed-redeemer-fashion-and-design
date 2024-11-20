@@ -1,7 +1,7 @@
 import ipinfo from "node-ipinfo";
 
 
-const token = process.env.NEXT_PUBLIC_IPINFO_TOKEN || "";
+const token = process.env.IPINFO_TOKEN || "";
 
 export const getCountryInfo = async (ip: string) => {
   const ipinfoClient = new ipinfo(token);
