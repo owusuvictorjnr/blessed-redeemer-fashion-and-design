@@ -84,7 +84,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
               <div className="flex justify-between items-center">
                 <p className="text-sm text-[#FFA500]">{rating}</p>
                 <p className="text-sm font-bold text-[#FF6B6B]">
-                  {(price as number).toFixed(2)}
+                  $ {(price as number).toFixed(2)}
                 </p>
               </div>
               <p className="font-semibold text-[#9E9E9E]">
