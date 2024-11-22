@@ -563,7 +563,7 @@ const allData = {
   ],
 
   // Shirts
-  shirt: [
+  homeShirt: [
     {
       name: "Long Sleev",
       slug: "longsleev",
